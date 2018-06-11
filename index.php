@@ -5,7 +5,7 @@ getHead("Accueil");
 ?>
 <div class="container">
 
-        <!-- Page principale -->
+        <!-- Page principale Test -->
         <div class="header">
             <div class="header__menu">
                 <ul class="main-menu">
