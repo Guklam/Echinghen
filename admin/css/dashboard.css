@@ -1,0 +1,312 @@
+/**
+ * General 
+----------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Calibri;
+}
+
+
+/**
+ * Variables 
+----------------------*/
+:root {
+	--grey: #95a5a6; /* var(--grey) */
+	--silver: #bdc3c7; /* var(--silver) */
+	--blue: #6187f5; /* var(--blue) */
+	--white: #ecf0f1; /* var(--white) */
+	--midnight: #2c3e50; /* var(--midnight) */
+	--bg-white: white; /* var(--bg-white) */
+}
+
+
+/**
+ * Sidebar 
+----------------------*/
+.sidebar {
+	height: 100%;
+    width: 16%;
+    background: var(--bg-white);
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    border-right: 1px solid var(--silver);
+    box-shadow: 0 0 14px rgba(0,0,0,0.10), 0 0 0 rgba(0,0,0,0.22);
+}
+.sidebar h2.name {
+	margin: 0;
+	padding: 14px;
+	font-weight: 100;
+	background: var(--blue);
+	color: var(--white);
+	text-align: center;
+	font-size: 19px;
+}
+.sidebar h2.title .icon-title {
+	float: right;
+}
+.sidebar h2.title span.version {
+	background: var(--grey);
+	padding: 3px;
+	border-radius: 3px;
+	font-size: 14px;
+}
+.sidebar .picture {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 30px;
+}
+.sidebar .picture img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+.sidebar .picture .text-img {
+	display: block;	
+	color: var(--grey);
+	font-size: 16px;
+	margin-top: 5px;
+}
+.sidebar .picture .text-img a {
+	color: var(--midnight);
+	text-decoration: none;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+.sidebar .picture .text-img svg[data-icon="angle-down"] {
+	display: inline-block;
+	margin-left: 10px;
+	    vertical-align: sub;
+}
+.sidebar .item {
+	width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+}
+div.sidebar > div:nth-child(3) h4.section-title {
+	color: var(--midnight);
+	margin-top: 30px;
+}
+.sidebar .section-sidebar h4.section-title {
+	margin-left: 30px;
+}
+.sidebar .section-sidebar ul {
+	margin: 0;
+	padding: 0;	
+}
+.sidebar .section-sidebar li {
+	list-style-type: none;	
+	transition: 0.3s;
+}
+.sidebar .section-sidebar li svg {
+	color: var(--grey);
+	transition: 0.3s;
+	margin-right: 5px;
+}
+.sidebar .section-sidebar li a {
+	color: #2c3e50ad;
+	text-decoration: none;
+	transition: 0.3s;
+	display: block;	
+	padding: 8px 8px 8px 30px;
+	font-size: 13px;
+}
+.sidebar .section-sidebar li:hover {
+	background: #bdc3c747;
+}
+.sidebar .section-sidebar li:hover a,
+.sidebar .section-sidebar li:hover svg {
+	color: var(--blue);
+}
+
+/**
+ * Search bar 
+----------------------*/
+.nav-search {
+	height: 52px;
+	background: var(--bg-white);
+	border-bottom: 1px solid var(--silver);
+	box-shadow: 0 0 14px rgba(0,0,0,0.10), 0 0 0 rgba(0,0,0,0.22);
+}
+.nav-search span.icon-side {
+	margin-left: 50px;
+	line-height: 10px;
+	color: var(--midnight);
+	display: inline;
+}
+.nav-search .nav-account {
+	float: right;
+	margin-top: 5px;
+}
+.nav-search .nav-account ul {
+	margin: 0;
+	margin-top: 4px;
+}
+.nav-search .nav-account li {
+	list-style-type: none;	
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: middle;
+	padding-top: 7px;
+}
+.nav-search .nav-account li svg {
+	color: var(--grey);
+}
+.nav-search .nav-account li a {
+	color: #2c3e50ad;
+	text-decoration: none;
+}
+.nav-search .nav-account li img {
+	width: 30px;
+	border-radius: 50%;
+}
+.nav-search .nav-account li:last-child {
+	margin-right: 40px;
+}
+.nav-search .nav-account li:first-child {
+	font-weight: 600;
+}
+.nav-search .nav-account li:first-child svg {
+	margin-right: 6px;
+	vertical-align: sub;
+}
+.nav-search .nav-account li a,
+.nav-search .nav-account li svg {
+	transition: 0.3s;
+}
+.nav-search .nav-account li:hover a,
+.nav-search .nav-account li:hover svg {
+	color: var(--blue);
+}
+
+
+/**
+ * Content
+----------------------*/
+.content {
+	margin-left: 16%;
+	background: var(--white);
+	height: 100vh;
+}
+.content .main-content {
+	margin: 30px;
+}
+.content .main-content ul {
+	margin: 0;
+	padding: 0;	
+	border-bottom: 1.2px solid #7f8c8d;
+}
+.content .main-content li {
+	list-style-type: none;	
+	padding: 8px;
+	transition: 0.3s;
+	display: inline-block;
+	border-bottom: 1.2px solid transparent;	
+	margin-bottom: -1.2px;
+	text-transform: uppercase;
+}
+.content .main-content li a {
+	color: #2c3e50ad;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.content .main-content li:hover {
+	border-bottom: 1.2px solid var(--blue);
+}
+.content .main-content li:hover a {
+	color: var(--blue);
+}
+.content .main-content .block {
+	padding: 10px;
+	box-shadow: 0 0 14px rgba(0,0,0,0.10), 0 0 0 rgba(0,0,0,0.22);
+	margin-top: 10px;
+	border-radius: 5px;
+	background: var(--bg-white);
+}
+.content .main-content h2 {
+	font-weight: 300;
+}
+
+/**
+ * Agenda
+----------------------*/
+#input-form input {
+	display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #bdc3c7;
+    margin-bottom: 4px;
+	transition: border 0.2s;
+	margin-top: 10px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+	transition: opacity 0.3s;
+	font-size: 12px;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(180deg);
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+	width: 100%;
+	background: white;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}

@@ -1,0 +1,64 @@
+//Crée par Guillaume Cazin dans le cadre d'une première année de BTS SIO
+
+/********************
+ * Langues
+ *******************/
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+//********************
+//* Sass composants
+//*******************
+@import 'components/__colors';
+@import 'components/__mixins';
+
+/********************
+ * Général
+ *******************/
+@import 'components/__general';
+
+/********************
+ * Menu
+ *******************/
+@import 'components/__menu';
+
+/********************
+ * Menu mobile
+ *******************/
+@import 'components/__mobile-menu';
+
+/********************
+ * Page principale
+ *******************/
+@import 'components/__main-page';
+
+/********************
+ * Slider
+ *******************/
+@import 'components/__slider';
+
+/********************
+ * Grilles images
+ *******************/
+@import 'components/__grid-images';
+
+/********************
+ * Buttons
+ *******************/
+@import 'components/__buttons';
+
+/********************
+ * Input
+ *******************/
+@import 'components/__inputs';
+
+/********************
+ * Alertes
+ *******************/
+@import 'components/__alerts';
+
+/********************
+ * Autres assets
+ *******************/
+@import 'components/__media_queries';
+@import 'components/__properties';
+@import 'components/__keyframes';

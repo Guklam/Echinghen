@@ -1,0 +1,26 @@
+$white: rgba(#ecf0f1, 1);
+$dark_white: darken($white, 5%);
+$opacity_white: rgba($white, 0.3);
+
+$grey: rgba(#7f8c8d, 1);
+$dark_grey: darken(#7f8c8d, 5%);
+$opacity_grey: rgba($grey, 0.3);
+
+$midnight: rgba(#2c3e50, 1);
+$dark_midnight: darken($midnight, 5%);
+$opacity_midnight: rgba($midnight, 0.3);
+
+$red: rgba(#c0392b, 1);
+$dark_red: darken($red, 5%);
+
+$blue: rgba(#6187f5, 1);
+$dark_blue: darken($blue, 5%);
+$opacity_blue: rgba($blue, 0.35);
+
+$yellow: rgba(#ebe049, 1);
+$dark_yellow: darken($yellow, 5%);
+$opacity_yellow: rgba($yellow, 0.3);
+
+$marroon: rgba(#e2965c, 1);
+$dark_marroon: darken($marroon, 5%);
+$opacity_marroon: rgba($marroon, 0.3);

@@ -1,0 +1,46 @@
+// Responsive
+@media screen and (max-width: 1200px) {
+    .button_container {
+        visibility: visible;
+    }
+    .header__menu {
+        visibility: hidden;
+    }
+    .block-buttons {
+        width: 70% !important;
+    }
+    .carousel-cell .button.suite {
+        font-size: 15px;
+    }
+    .carousel-cell .text {
+        font-size: 18px;
+    }
+    .carousel-cell:hover .text span.texte-article {
+        font-size: 14px;
+        margin-top: 17px;
+    }
+    .carousel-cell:hover .text a.title {
+        font-size: 17px;
+    }
+    .carousel-cell:hover .text span.texte-article {
+        font-size: 15px;
+    }
+    .carousel-cell:hover .text span.date {
+        top: 61%;
+    }
+    .carousel-cell:hover .text .button.suite {
+        top: 75%;
+        transform: translate(-50%, -75%);
+    }
+}
+@media screen and (max-height: 500px) {
+    .container .header .block-buttons {
+        margin-top: 0;
+    }
+    .header {
+        overflow: hidden;
+        &__title {
+            margin-top: 0 !important;
+        }
+    }
+}
