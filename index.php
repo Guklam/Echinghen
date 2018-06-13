@@ -92,7 +92,7 @@ getHead("Accueil");
         <!-- Localisation -->
         <div id="localisation">
             <h2 class="title"><span>Localisation</span></h2>
-            <iframe style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyB828p2bVQ6LOQCK2-YRZZFhlR_kR2ZlZM&q=echinghen"></iframe>
+            <iframe style="border:0" src="https://www.google.com/maps/embed/v1/search?key=&q=echinghen"></iframe>
         </div>
 
         <div id="restaurant">
