@@ -8,7 +8,7 @@ Sitemap du site : <https://www.xml-sitemaps.com/download/www.echinghen.com-448b4
 
 * Fichier sass : **main.scss** (Composants dans le dossier components)
 * Background : **main.scss** / main.css -> $background
-* Couleurs: **__colors.scss** / main.css
+* Couleurs: **_colors.scss** / main.css
 
 ## Base de données
 
@@ -22,22 +22,22 @@ Nom de la bdd : **echinghen**
   * lien_article
   * date_article
 
-Configuration à changer si besoin dans le dossier **config/config.php**
+Configuration à changer si besoin dans le dossier **config/Config.php**
 
 ## Helpers PHP
 
 * includes
-  * Connexion à la base de données (**dbConnect()**)
-  * Accesseur pour le head HTML (**getHead()**)
-  * Fonction qui retourne les news extraite de *lasemainedansleboulonnais* (**getNews()**)
-  * Fonction qui retourne les articles écrit (**getArticles()**)
-  * Fonction qui retourne le menu (**getMenu()**)
-  * Fonction qui retourne le menu pour mobile (**getMenuMobile()**)
-  * Fonction qui retourne la balise `<script>` (**getScripts()**)
-  * Fonction qui retourne le footer (**getFooter()**)
+  * Connexion à la base de données ( `dbConnect()` )
+  * Accesseur pour le head HTML ( `getHead()` )
+  * Fonction qui retourne les news extraite de *lasemainedansleboulonnais* ( `getNews()` )
+  * Fonction qui retourne les articles écrit ( `getArticles()` )
+  * Fonction qui retourne le menu ( `getMenu()` )
+  * Fonction qui retourne le menu pour mobile ( `getMenuMobile()` )
+  * Fonction qui retourne la balise `<script>` ( `getScripts()` )
+  * Fonction qui retourne le footer ( `getFooter()` )
 
 * admin/includes
-  * Connexion à la base de données (**dbConnect()**)
-  * Accesseur pour le head HTML (**getHead()**)
-  * Fonction qui retourne le menu latéral pour la dashboard (**getSidebar()**)
-  * Fonction qui retourne le menu du haut pour la dashboard (**getNav()**)
+  * Connexion à la base de données ( `dbConnect()` )
+  * Accesseur pour le head HTML ( `getHead()` )
+  * Fonction qui retourne le menu latéral pour la dashboard ( `getSidebar()` )
+  * Fonction qui retourne le menu du haut pour la dashboard ( `getNav()` )
