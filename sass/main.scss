@@ -8,57 +8,57 @@
 //********************
 //* Sass composants
 //*******************
-@import 'components/__colors';
-@import 'components/__mixins';
+@import 'components/colors';
+@import 'components/mixins';
 
 /********************
  * Général
  *******************/
-@import 'components/__general';
+@import 'components/general';
 
 /********************
  * Menu
  *******************/
-@import 'components/__menu';
+@import 'components/menu';
 
 /********************
  * Menu mobile
  *******************/
-@import 'components/__mobile-menu';
+@import 'components/mobile-menu';
 
 /********************
  * Page principale
  *******************/
-@import 'components/__main-page';
+@import 'components/main-page';
 
 /********************
  * Slider
  *******************/
-@import 'components/__slider';
+@import 'components/slider';
 
 /********************
  * Grilles images
  *******************/
-@import 'components/__grid-images';
+@import 'components/grid-images';
 
 /********************
  * Buttons
  *******************/
-@import 'components/__buttons';
+@import 'components/buttons';
 
 /********************
  * Input
  *******************/
-@import 'components/__inputs';
+@import 'components/inputs';
 
 /********************
  * Alertes
  *******************/
-@import 'components/__alerts';
+@import 'components/alerts';
 
 /********************
  * Autres assets
  *******************/
-@import 'components/__media_queries';
-@import 'components/__properties';
-@import 'components/__keyframes';
+@import 'components/media_queries';
+@import 'components/properties';
+@import 'components/keyframes';
