@@ -41,3 +41,22 @@ Configuration à changer si besoin dans le dossier **config/Config.php**
   * Accesseur pour le head HTML ( `getHead()` )
   * Fonction qui retourne le menu latéral pour la dashboard ( `getSidebar()` )
   * Fonction qui retourne le menu du haut pour la dashboard ( `getNav()` )
+
+## Interface d'administration
+
+La partie pour se connecter à l'administration se trouve dans `admin/connexion.php`.
+
+**Fonctionnalités** : 
+
+* Dashboard
+  * Vue générale de l'interface ( `dashboard.php` )
+  * Gérér l'agenda ( `agenda.php` )
+  * Recevoir les messages ( `message.php` )
+  * Voir les personnes inscrites pour la newsletter ( `newsletter.php` )
+
+* Actions
+  * Écrire un article ( `article.php` )
+  * Actualiser les articles qui récupère toutes les actualités recentes de la *Lasemainedansleboulonnais*, à faire une fois dans la semaine ( `news_update.php` )
+  * Créer un nouveau administrateur ( `ìnscription.php` )
+  * Exporter la BDD, réservé aux développeurs ( `dump_bdd.php` )
+  * Sécurité ( `securite.php` )
