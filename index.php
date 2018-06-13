@@ -100,28 +100,14 @@ getHead("Accueil");
             <div class="grid-restaurant">
                 <div class="image-restaurant"></div>
                 <div class="desc-restaurant">
-                    <h2>L'auberge d'Echinghen</h2>
-                    <p>Dolore eiusmod mollit mollit consequat labore ut. Culpa do nostrud ut culpa elit. Labore nulla ex dolore occaecat. Dolore minim tempor amet magna excepteur sit deserunt fugiat occaecat dolore laborum. Occaecat Lorem nulla officia est veniam velit do deserunt. Quis proident amet reprehenderit anim. Qui aute est magna ex minim.</p>
-                    <p>Magna minim minim non cupidatat est velit eu do veniam officia tempor eu et. Lorem consequat proident dolor pariatur. Commodo ea exercitation cillum ipsum. Ea commodo esse aliqua sunt proident. Aliquip aliquip aliquip officia ex fugiat sint aute amet nisi amet duis do Lorem sunt.</p>
-                    <div class="links-social left">
-                        <a target="_blank" href="https://www.facebook.com/Lauberge-d-Echinghen-302569896510209/"><i class="fab fa-facebook"></i></a>
-                        <a target="_blank" href="https://www.tripadvisor.fr/Restaurant_Review-g2337126-d4019802-Reviews-Auberge_echinghen-Echinghen_Pas_de_Calais_Hauts_de_France.html"><i class="fab fa-tripadvisor"></i></a>
-                        <a target="_blank" href="#"><i class="fab fa-twitter-square"></i></a>
-                        <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="desc-restaurant">
                     <h2>Aux Amis de Steph</h2>
                     <p>Adipisicing ad proident ea minim duis culpa aliqua proident velit. Excepteur proident qui sit excepteur aliqua officia esse cillum. Exercitation cupidatat deserunt laborum incididunt id exercitation ea. Nisi deserunt cillum proident cillum proident nulla mollit mollit veniam aliquip.</p>
                     <p>Dolore sint eiusmod do do mollit labore sunt cupidatat eu esse sit id. Do nostrud eu tempor ut quis. Duis nostrud do exercitation commodo nostrud nisi pariatur cupidatat nulla duis exercitation quis.</p>
-                    <div class="links-social right">
+                    <div class="links-social left">
                         <a target="_blank" href="https://www.facebook.com/Aux-Amis-De-Stef-619366901533983/"><i class="fab fa-facebook"></i></a>
                         <a target="_blank" href="https://www.tripadvisor.fr/Restaurant_Review-g2337126-d2330032-Reviews-Aux_Amis_de_Stef-Echinghen_Pas_de_Calais_Hauts_de_France.html"><i class="fab fa-tripadvisor"></i></a>
-                        <a target="_blank" href="#"><i class="fab fa-twitter-square"></i></a>
-                        <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="image-restaurant"></div>
                 </div>
             </div>
         </div>

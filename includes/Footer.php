@@ -7,9 +7,9 @@
     <div class="footer-menu">
         <p>Lien utiles</p>
         <ul>
-            <li><a href="#"><i class="fa fa-angle-right"></i> La CAB</a></li>
-            <li><a href="#"><i class="fa fa-angle-right"></i> Google</a></li>
-            <li><a href="#"><i class="fa fa-angle-right"></i> Test</a></li>
+            <li><a href="#"><i class="fas fa-users"></i> La CAB</a></li>
+            <li><a href="#"><i class="fas fa-bus"></i> Marinéo</a></li>
+            <li><a href="#"><i class="fas fa-sitemap"></i> Sitemap</a></li>
         </ul>
     </div>
     <div class="footer-contact">
