@@ -60,3 +60,21 @@ La partie pour se connecter à l'administration se trouve dans `admin/connexion.
   * Créer un nouveau administrateur ( `ìnscription.php` )
   * Exporter la BDD, réservé aux développeurs ( `dump_bdd.php` )
   * Sécurité ( `securite.php` )
+
+## Ressources/langages utilisés
+
+* Langages
+  * HTML pour la mise en forme
+  * Préprocesseur CSS (*Sass*) pour le design
+  * PHP pour la partie serveur
+  * jQuery pour l'animation du menu pour mobile et de quelques éléments
+  * **Aucun framework utilisé**
+
+* Ressources
+  * FontAwesome pour les icônes
+  * Flickity pour le slider
+  * Interface d'admistration basé sur un design de Dribbble (Ré-adapté en site web par moi)
+  * Grid CSS pour les articles, catégories etc basé sur un CodePen
+  * Boutons et input bootstrap
+  * Grid CSS pour l'interface d'admistration basé sur Skeleton
+  * Animation du menu au hover basé sur un CodePen
