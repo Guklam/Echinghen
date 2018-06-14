@@ -36,31 +36,39 @@ else {
                     </div>
                 </div>
                 <div class="row">
-                <div class="twelve columns block">
-                <table>
-                <tr>
-                    <th>Identifiant</th>
-                    <th>Utilisateur</th>
-                    <th>Adresse email</th>
-                    <th>Date d'inscription</th>
-                </tr>
-                <?php 
+                    <div class="twelve columns block">
+                        <table>
+                            <tr>
+                                <th>Identifiant</th>
+                                <th>Utilisateur</th>
+                                <th>Adresse email</th>
+                                <th>Date d'inscription</th>
+                            </tr>
+                            <?php 
 
                 $bdd = dbConnect();
                 $req = $bdd->query('SELECT id, user, email, date_inscription FROM admin');
                 while($donnees = $req->fetch()) {
                 ?>
-                    <tr>
-                        <td><?php echo $donnees['id']; ?></td>
-                        <td><?php echo $donnees['user']; ?></td>
-                        <td><?php echo $donnees['email']; ?></td>
-                        <td><?php echo $donnees['date_inscription']; ?></td>
-                    </tr>
-                <?php
+                            <tr>
+                                <td>
+                                    <?php echo $donnees['id']; ?>
+                                </td>
+                                <td>
+                                    <?php echo $donnees['user']; ?>
+                                </td>
+                                <td>
+                                    <?php echo $donnees['email']; ?>
+                                </td>
+                                <td>
+                                    <?php echo $donnees['date_inscription']; ?>
+                                </td>
+                            </tr>
+                            <?php
                 }
                 ?>
-                </table>
-                </div>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

@@ -79,3 +79,4 @@ La partie pour se connecter à l'administration se trouve dans `admin/connexion.
   * Grid CSS pour l'interface d'admistration basée sur Skeleton
   * Animation du menu au hover basé sur un CodePen
   * ChartJS pour les graphiques dans l'interface d'admistration
+  * Fichier de manipulation du DOM récupéré sur Internet

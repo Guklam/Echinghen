@@ -3,7 +3,7 @@ session_start();
 require 'includes/helpers.php';
 getHead("Accueil"); 
 ?>
-<div class="container">
+    <div class="container">
 
         <!-- Page principale -->
         <div class="header">
@@ -50,9 +50,11 @@ getHead("Accueil");
                     <h1>Bienvenue à Echinghen</h1>
                     <div id="weather"></div>
                 </div>
-            <div class="discover">
-                    <a class="js-scrollTo" href="#news">Découvrir la commune<i class="fa fa-angle-down"></i></a>
-            </div>
+                <div class="discover">
+                    <a class="js-scrollTo" href="#news">Découvrir la commune
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -91,27 +93,39 @@ getHead("Accueil");
 
         <!-- Localisation -->
         <div id="localisation">
-            <h2 class="title"><span>Localisation</span></h2>
+            <h2 class="title">
+                <span>Localisation</span>
+            </h2>
             <iframe style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAEJnOsWjp22krFh2m4foTBEV3BlEcNF2Y&q=echinghen"></iframe>
         </div>
 
         <!-- Se restaurer à Echinghen -->
         <div id="restaurant">
-            <h2 class="title"><span>Se restaurer à Echinghen</span></h2>
+            <h2 class="title">
+                <span>Se restaurer à Echinghen</span>
+            </h2>
             <div class="grid-restaurant">
                 <div class="image-restaurant"></div>
                 <div class="desc-restaurant">
                     <h2>Aux Amis de Steph</h2>
-                    <p>Adipisicing ad proident ea minim duis culpa aliqua proident velit. Excepteur proident qui sit excepteur aliqua officia esse cillum. Exercitation cupidatat deserunt laborum incididunt id exercitation ea. Nisi deserunt cillum proident cillum proident nulla mollit mollit veniam aliquip.</p>
-                    <p>Dolore sint eiusmod do do mollit labore sunt cupidatat eu esse sit id. Do nostrud eu tempor ut quis. Duis nostrud do exercitation commodo nostrud nisi pariatur cupidatat nulla duis exercitation quis.</p>
+                    <p>Adipisicing ad proident ea minim duis culpa aliqua proident velit. Excepteur proident qui sit excepteur
+                        aliqua officia esse cillum. Exercitation cupidatat deserunt laborum incididunt id exercitation ea.
+                        Nisi deserunt cillum proident cillum proident nulla mollit mollit veniam aliquip.</p>
+                    <p>Dolore sint eiusmod do do mollit labore sunt cupidatat eu esse sit id. Do nostrud eu tempor ut quis.
+                        Duis nostrud do exercitation commodo nostrud nisi pariatur cupidatat nulla duis exercitation quis.</p>
                     <div class="links-social left">
-                        <a target="_blank" href="https://www.facebook.com/Aux-Amis-De-Stef-619366901533983/"><i class="fab fa-facebook"></i></a>
-                        <a target="_blank" href="https://www.tripadvisor.fr/Restaurant_Review-g2337126-d2330032-Reviews-Aux_Amis_de_Stef-Echinghen_Pas_de_Calais_Hauts_de_France.html"><i class="fab fa-tripadvisor"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/Aux-Amis-De-Stef-619366901533983/">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a target="_blank" href="https://www.tripadvisor.fr/Restaurant_Review-g2337126-d2330032-Reviews-Aux_Amis_de_Stef-Echinghen_Pas_de_Calais_Hauts_de_France.html">
+                            <i class="fab fa-tripadvisor"></i>
+                        </a>
                     </div>
                 </div>
-                </div>
             </div>
+        </div>
         <!-- Footer -->
         <?= getFooter(); ?>
-</div><!-- Fin du .container -->
-<?= getScripts(); ?>
+    </div>
+    <!-- Fin du .container -->
+    <?= getScripts(); ?>

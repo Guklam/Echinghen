@@ -12,21 +12,22 @@ else {
     header('Location: connexion.php');
 }
 ?>
-<body>
-    <div class="main" id="main">
 
-        <?php getSidebar(); ?>
+    <body>
+        <div class="main" id="main">
 
-        <!-- Content -->
-        <div class="content">
-            <?php getNav(); ?>
+            <?php getSidebar(); ?>
 
-            <!-- Main content -->
-            <div class="main-content">
-                <h2>Ajouter une date à l'agenda</h2>
-                <div class="row">
-                    <div class="twelve columns block" id="input-form">
-<?php 
+            <!-- Content -->
+            <div class="content">
+                <?php getNav(); ?>
+
+                <!-- Main content -->
+                <div class="main-content">
+                    <h2>Ajouter une date à l'agenda</h2>
+                    <div class="row">
+                        <div class="twelve columns block" id="input-form">
+                            <?php 
 if(!empty($_POST['user']) && !empty($_POST['pass']) && !empty($_POST['email'])) {
     $bdd = dbConnect();
     $req = $bdd->prepare('SELECT COUNT(*) FROM admin WHERE user = ?');
@@ -55,13 +56,13 @@ else {
     echo '<div class="alert alert-warning">Les champs doivent être remplies</div>';
 }
 ?>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-</body>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    </body>
 
 </html>

@@ -6,35 +6,43 @@
 require_once 'includes/helpers.php';
 getHead("Connexion");
 ?>
-<body>
-<?php 
+
+    <body>
+        <?php 
 if(isset($_SESSION['id'])) {
     header('Location: dashboard.php');
 }
 ?>
-<a class="back" href="../"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
-<div class="login">
-	<!-- Login -->
-	<div class="login-title">
-		<div class="login-box"><a>Connexion à l'administration</a></div>
-	</div>
-	<div class="form" id="login">
-	<div class="login-form-co">
-    <form action="connexion.php" method="post">
-        <div class="input-group">
-            <div class="input-icon">
-                <span><i class="fas fa-user"></i></span>
+        <a class="back" href="../">
+            <i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
+        <div class="login">
+            <!-- Login -->
+            <div class="login-title">
+                <div class="login-box">
+                    <a>Connexion à l'administration</a>
+                </div>
             </div>
-            <input class="form-control" type="text" name="user" placeholder="Nom d'utilisateur">
-        </div>
-        <div class="input-group">
-            <div class="input-icon">
-                <span><i class="fas fa-lock"></i></span>
-            </div>
-            <input class="form-control" type="password" name="pass" placeholder="Mot de passe" autocomplete="off">
-        </div>
-        <button class="btn btn-primary btn-block" type="submit">Connexion</button>
-        <?php 
+            <div class="form" id="login">
+                <div class="login-form-co">
+                    <form action="connexion.php" method="post">
+                        <div class="input-group">
+                            <div class="input-icon">
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                            <input class="form-control" type="text" name="user" placeholder="Nom d'utilisateur">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-icon">
+                                <span>
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </div>
+                            <input class="form-control" type="password" name="pass" placeholder="Mot de passe" autocomplete="off">
+                        </div>
+                        <button class="btn btn-primary btn-block" type="submit">Connexion</button>
+                        <?php 
 if(isset($_POST)) {
 if(isset($_POST['user']) && isset($_POST['pass'])) {
     $bdd = dbConnect();
@@ -68,9 +76,10 @@ if(isset($_POST['user']) && isset($_POST['pass'])) {
 }
 }
 ?>
-    </form>
-    </div>
-</div>
-</div>
-</body>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
 </html>

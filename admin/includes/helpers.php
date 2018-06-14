@@ -1,8 +1,10 @@
 <?php
 
 /**
-* Connexion à la base de données 
-**/
+ * Connexion à la base de données
+ *
+ * @return void
+ */
 function dbConnect() {
     require_once('../config/config.php');
     try {
@@ -15,7 +17,10 @@ function dbConnect() {
 }
 
 /**
- * Accesseur pour le head HTML
+ * Getter pour le head HTML
+ *
+ * @param [string] $titre
+ * @return void
  */
 function getHead($titre)
 {
@@ -23,9 +28,11 @@ function getHead($titre)
     
         protected $titre;
     
-        /*
-        * Constructeur du head
-        */ 
+        /**
+         * Constructeur pour le titre
+         *
+         * @param [string] $unTitre
+         */
         function __construct($unTitre) {
             $this->titre = $unTitre;
         }
@@ -35,14 +42,18 @@ function getHead($titre)
 }
 
 /**
- * Menu sur le côté
+ * Récupérer le menu latéral
+ *
+ * @return void
  */
 function getSidebar() {
     require_once('Sidebar.php');
 }
 
 /**
- * Menu en haut
+ * Récupérer le menu principal
+ *
+ * @return void
  */
 function getNav() {
     require_once('Nav.php');

@@ -12,8 +12,9 @@ getHead("Erreur 404");
         </div>
     </div>
     <div class="arrow-back">
-        <i onclick="window.history.back()" class="fas fa-arrow-left"></i></>
+        <i onclick="window.history.back()" class="fas fa-arrow-left"></i>
     </div>
 </div>
 </body>
+
 </html>

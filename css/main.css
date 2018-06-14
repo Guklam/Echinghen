@@ -17,7 +17,10 @@ body {
   font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#news, #localisation, #presentation, #restaurant {
+#news,
+#localisation,
+#presentation,
+#restaurant {
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -493,7 +496,8 @@ body {
   transform: translateX(-50%);
 }
 
-.container .header .discover a, .container .header .discover i {
+.container .header .discover a,
+.container .header .discover i {
   color: #ecf0f1;
 }
 
@@ -1023,7 +1027,8 @@ input[type="button"].btn-block {
   border-bottom-left-radius: 0;
 }
 
-.input-group > .custom-select:not(:last-child), .input-group > .form-control:not(:last-child) {
+.input-group > .custom-select:not(:last-child),
+.input-group > .form-control:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -1054,7 +1059,7 @@ input[type="button"].btn-block {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   font-family: inherit;
 }
 
@@ -1410,7 +1415,11 @@ h2.title span:after {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
