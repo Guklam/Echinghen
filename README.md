@@ -65,10 +65,10 @@ La partie pour se connecter à l'administration se trouve dans `admin/connexion.
 
 * Langages
   * HTML pour la mise en forme
-  * Préprocesseur CSS (*Sass*) pour le design
+  * Préprocesseur CSS (*SCSS*) pour le design
   * PHP pour la partie serveur
   * jQuery pour l'animation du menu pour mobile et de quelques éléments
-  * **Aucun framework utilisé**
+  * **Aucun CMS/framework utilisé**
 
 * Ressources
   * FontAwesome pour les icônes
@@ -76,5 +76,6 @@ La partie pour se connecter à l'administration se trouve dans `admin/connexion.
   * Interface d'admistration basé sur un design de Dribbble (Ré-adapté en site web par moi)
   * Grid CSS pour les articles, catégories etc basé sur un CodePen
   * Boutons et input bootstrap
-  * Grid CSS pour l'interface d'admistration basé sur Skeleton
+  * Grid CSS pour l'interface d'admistration basée sur Skeleton
   * Animation du menu au hover basé sur un CodePen
+  * ChartJS pour les graphiques dans l'interface d'admistration

@@ -92,9 +92,10 @@ getHead("Accueil");
         <!-- Localisation -->
         <div id="localisation">
             <h2 class="title"><span>Localisation</span></h2>
-            <iframe style="border:0" src="https://www.google.com/maps/embed/v1/search?key=API_KEY&q=echinghen"></iframe>
+            <iframe style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAEJnOsWjp22krFh2m4foTBEV3BlEcNF2Y&q=echinghen"></iframe>
         </div>
 
+        <!-- Se restaurer à Echinghen -->
         <div id="restaurant">
             <h2 class="title"><span>Se restaurer à Echinghen</span></h2>
             <div class="grid-restaurant">
@@ -110,11 +111,7 @@ getHead("Accueil");
                 </div>
                 </div>
             </div>
-        </div>
-
         <!-- Footer -->
         <?= getFooter(); ?>
-
 </div><!-- Fin du .container -->
-
 <?= getScripts(); ?>

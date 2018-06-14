@@ -4,11 +4,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 @mixin prefix-browser($property, $value) {
     -webkit-#{$property}: #{$value};
-     -khtml-#{$property}: #{$value};
-       -moz-#{$property}: #{$value};
-        -ms-#{$property}: #{$value};
-         -o-#{$property}: #{$value};
-            #{$property}: #{$value};
-  }
+    -khtml-#{$property}: #{$value};
+    -moz-#{$property}: #{$value};
+    -ms-#{$property}: #{$value};
+    -o-#{$property}: #{$value};
+    #{$property}: #{$value};
+}

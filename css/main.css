@@ -6,6 +6,7 @@
 /********************
  * Général
  *******************/
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 * {
   box-sizing: border-box;
 }
@@ -30,6 +31,7 @@ body {
   margin: 0 auto;
   height: 80vh;
   width: 80%;
+  box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
 #footer {
@@ -183,6 +185,43 @@ body {
   position: absolute;
   left: 30px;
   bottom: 10px;
+}
+
+.container-404 {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 145, 71, 0.85), rgba(255, 160, 96, 0.85));
+}
+
+.container-404 .error-404 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Montserrat';
+  color: #ecf0f1;
+}
+
+.container-404 .error-404 .main-error {
+  font-size: 9rem;
+}
+
+.container-404 .error-404 .text-error {
+  font-size: 1.2rem;
+}
+
+.container-404 .error-404 .text-error a {
+  color: #2c3e50;
+}
+
+.container-404 .arrow-back {
+  padding: 10px;
+  color: white;
+  font-size: 2.2rem;
+}
+
+.container-404 .arrow-back i {
+  cursor: pointer;
 }
 
 /********************
@@ -403,9 +442,10 @@ body {
  * Page principale
  *******************/
 .container .header {
-  background: linear-gradient(transparent, rgba(97, 135, 245, 0.35)), url("../images/background.jpg");
+  background: linear-gradient(rgba(97, 135, 245, 0.15), rgba(97, 135, 245, 0.3)), url("../images/background-test-2.jpg");
   height: 100vh;
   background-size: cover;
+  background-position: left;
 }
 
 .container .header.page {
@@ -1222,8 +1262,29 @@ input[type="button"].btn-block {
   .button_container {
     visibility: visible;
   }
-  .header__menu {
+  .container .header.page {
+    height: 49px;
+  }
+  .header__menu ul.main-menu {
+    display: block;
+  }
+  .header__menu ul.main-menu li {
     visibility: hidden;
+  }
+  .header__menu ul.main-menu li.title {
+    justify-content: initial;
+    visibility: visible !important;
+  }
+  .header__menu ul.main-menu li.title img {
+    height: 34px;
+  }
+  .header__menu ul.main-menu li.title a {
+    text-decoration: none;
+    color: #eaeaea;
+    padding: 9px 0 0 6px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    line-height: 1.8;
   }
   .block-buttons {
     width: 70% !important;
@@ -1262,6 +1323,16 @@ input[type="button"].btn-block {
   }
   .header__title {
     margin-top: 0 !important;
+  }
+  .overlay ul li a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .overlay ul li a {
+    padding-bottom: 0;
+    font-size: 15px;
   }
 }
 

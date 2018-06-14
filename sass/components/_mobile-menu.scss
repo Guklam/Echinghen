@@ -8,7 +8,6 @@
     z-index: 100;
     transition: opacity .25s ease;
     visibility: hidden;
-
     span {
         background: $blue;
         border: none;
@@ -19,35 +18,28 @@
         left: 0;
         transition: all .35s ease;
         cursor: pointer;
-
         &:nth-of-type(2) {
             top: 11px;
         }
-
         &:nth-of-type(3) {
             top: 22px;
         }
     }
-
     &:hover {
         opacity: .7;
     }
-
     &.active {
         .top,
         .middle,
         .bottom {
             background: $dark_red;
         }
-        
         .top {
             transform: translateY(11px) translateX(0) rotate(45deg);
         }
-
         .middle {
             opacity: 0;
         }
-
         .bottom {
             transform: translateY(-11px) translateX(0) rotate(-45deg);
         }
@@ -65,13 +57,11 @@
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
-
     &.open {
         opacity: .9;
         visibility: visible;
         height: 100%;
         z-index: 10;
-
         li {
             animation: fadeInRight .5s ease forwards;
             animation-delay: .35s;
@@ -86,7 +76,6 @@
             }
         }
     }
-
     nav {
         position: absolute;
         top: 50%;
@@ -96,7 +85,6 @@
         font-weight: 400;
         text-align: center;
     }
-
     ul {
         list-style: none;
         padding: 0;
@@ -104,13 +92,11 @@
         display: inline-block;
         position: relative;
         height: 100%;
-
         li {
             display: block;
             padding-bottom: 20px;
             position: relative;
             opacity: 0;
-
             a {
                 display: block;
                 position: relative;
@@ -118,13 +104,11 @@
                 text-decoration: none;
                 overflow: hidden;
                 padding-bottom: 10px;
-
                 &:hover:after,
                 &:focus:after,
                 &:active:after {
                     width: 100%;
                 }
-
                 &:after {
                     content: '';
                     position: absolute;

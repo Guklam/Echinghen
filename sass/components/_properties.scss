@@ -1,41 +1,40 @@
 .bold {
     font-weight: bold;
 }
+
 .italic {
     font-weight: normal;
 }
+
 .push-left {
     margin-left: auto;
 }
+
 h2.title {
     text-align: center;
     font-size: 30px;
     padding-bottom: 15px;
     font-weight: 100;
     text-transform: uppercase;
-	color: $midnight;
-	overflow: hidden;
-    
+    color: $midnight;
+    overflow: hidden;
     span {
-		display: inline-block;
-		position: relative;
-
-		&:before,
-		&:after {
-			content: "";
-			border-bottom: 2px solid $blue;
-			width: 7em;
-			margin: 0 1.5em;
-			position: absolute;
-			bottom: .5em;
-		}
-
-		&:before {
-			right: 100%;
-		}
-
-		&:after {
-			left: 100%;
-		}
-}
+        display: inline-block;
+        position: relative;
+        &:before,
+        &:after {
+            content: "";
+            border-bottom: 2px solid $blue;
+            width: 7em;
+            margin: 0 1.5em;
+            position: absolute;
+            bottom: .5em;
+        }
+        &:before {
+            right: 100%;
+        }
+        &:after {
+            left: 100%;
+        }
+    }
 }

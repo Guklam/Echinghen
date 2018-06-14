@@ -9,6 +9,7 @@
     width: 100%;
     margin-bottom: 5px;
 }
+
 .form-control {
     display: block;
     width: 100%;
@@ -20,35 +21,41 @@
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     font-family: inherit;
 }
+
 .form-control:focus {
     color: #495057;
     background-color: #fff;
     border-color: #80bdff;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
 }
-.input-group > .form-control {
+
+.input-group>.form-control {
     position: relative;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     width: 1%;
     margin-bottom: 0;
 }
-.input-group> .input-icon > span {
+
+.input-group>.input-icon>span {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-.input-group > .form-control:not(:first-child) {
+
+.input-group>.form-control:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+
 .input-icon {
     display: flex;
     margin-right: -1px;
 }
+
 .input-icon span {
     display: -ms-flexbox;
     display: flex;

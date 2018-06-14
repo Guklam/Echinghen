@@ -29,10 +29,10 @@ else {
 							  <canvas id="myChart" width="100" height="100"></canvas>
 						</div>
 						<div class="four columns block p0">
-          					<span class="title-block">Hello world!</span>
+                              <span class="title-block">Espace disque utilisé</span>
 						</div>
 						<div class="four columns block p0">
-          					<span class="title-block">Hello world!</span>
+                              <span class="title-block">Nombres d'inscrit</span>
           				</div>
         		</div>
 		</div>

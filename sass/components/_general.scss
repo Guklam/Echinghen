@@ -8,20 +8,23 @@ body {
     font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#news, #localisation, #presentation, #restaurant {
+#news,
+#localisation,
+#presentation,
+#restaurant {
     margin-top: 60px;
     margin-bottom: 60px;
 }
+
 #localisation {
     position: relative;
-
     iframe {
         display: flex;
         margin: 0 auto;
         height: 80vh;
         width: 80%;
+        box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.15);
     }
-    
 }
 
 #footer {
@@ -38,7 +41,7 @@ body {
         line-height: 2;
         color: $white;
     }
-    > [class*="footer"]:not(:nth-child(1n +2)) {
+    >[class*="footer"]:not(:nth-child(1n +2)) {
         display: inline-grid;
         justify-content: center;
         align-content: center;
@@ -87,7 +90,7 @@ body {
         color: $dark_white;
         font-size: 12px;
         -webkit-user-select: none;
-        -moz-user-select: none; 
+        -moz-user-select: none;
         user-select: none;
     }
 }
@@ -104,13 +107,13 @@ body {
         .image-restaurant:first-child {
             background: url(https://media-cdn.tripadvisor.com/media/photo-w/0a/20/b7/12/fraisier-revisite.jpg);
         }
-        .image-restaurant ~ .image-restaurant {
+        .image-restaurant~.image-restaurant {
             background: url(https://media-cdn.tripadvisor.com/media/photo-w/07/9b/7e/06/les-amis-de-l-estaminet.jpg);
         }
         .desc-restaurant {
             padding: 30px;
             background: lighten($grey, 46%);
-            box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.08);
+            box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.08);
             position: relative;
             h2 {
                 color: $midnight;
@@ -150,6 +153,35 @@ body {
                 left: 30px;
                 bottom: 10px;
             }
+        }
+    }
+}
+
+.container-404 {
+    height: 100vh;
+    background: linear-gradient(lighten(rgba(255, 130, 45, 0.85), 5%), lighten(rgba(255, 130, 45, 0.85), 10%));
+    .error-404 {
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
+        @include center();
+        text-align: center;
+        font-family: 'Montserrat';
+        color: $white;
+        .main-error {
+            font-size: 9rem;
+        }
+        .text-error {
+            font-size: 1.2rem;
+            a {
+                color: $midnight;
+            }
+        }
+    }
+    .arrow-back {
+        padding: 10px;
+        color: white;
+        font-size: 2.2rem;
+        i {
+            cursor: pointer;
         }
     }
 }
