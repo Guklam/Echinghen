@@ -1,0 +1,66 @@
+/**
+ * @author Guillaume Cazin
+ * @description Site web crée de A à Z dans le cadre d'une premiere année de BTS SIO
+ * @date 28/05/18 => 06/07/18
+ */
+
+/**
+ * Langues
+ */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+//**
+//* Composants SCSS
+//*/
+@import 'components/colors';
+@import 'components/mixins';
+
+/**
+ * Général
+ */
+@import 'components/general';
+
+/**
+ * Menu
+ */
+@import 'components/menu';
+
+/**
+ * Menu mobile
+ */
+@import 'components/mobile-menu';
+
+/**
+ * Slider
+ */
+@import 'components/slider';
+
+/**
+ * Grid pour les images
+ */
+@import 'components/grid-images';
+
+/**
+ * Boutons
+ */
+@import 'components/buttons';
+
+/**
+ * Inputs
+ */
+@import 'components/inputs';
+
+/**
+ * Alertes
+ */
+@import 'components/alerts';
+
+/**
+ * Composants divers
+ * @media-queries
+ * @properties
+ * @keyframes
+ */
+@import 'components/media_queries';
+@import 'components/properties';
+@import 'components/keyframes';

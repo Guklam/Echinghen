@@ -35,46 +35,6 @@
                         }
                         ?>
                     </ul>
-                    <div class="button_container" id="toggle">
-                        <span class="top"></span>
-                        <span class="middle"></span>
-                        <span class="bottom"></span>
-                    </div>
-                    <div class="overlay" id="overlay">
-                        <nav class="overlay-menu">
-                            <ul>
-                                <li class="items active">
-                                    <a href="news">Actualités</a>
-                                </li>
-                                <li class="items">
-                                    <a href="agenda">Agenda</a>
-                                </li>
-                                <li class="items">
-                                    <a href="infos-pratiques">Infos pratiques</a>
-                                </li>
-                                <li class="items">
-                                    <a href="locations">Location de salles</a>
-                                </li>
-                                <li class="items">
-                                    <a href="administratif">Administratif</a>
-                                </li>
-                                <li class="items">
-                                    <a href="vie-sociale">Vie sociale</a>
-                                </li>
-                                <li class="items">
-                                    <a href="le-village">Le village</a>
-                                </li>
-                                <?php
-                                if(isset($_SESSION['id'])) {
-                                echo '
-                                <li class="items">
-                                    <a href="admin/dashboard.php">Administration</a>
-                                </li>';
-                                }
-                                else {}
-                                ?>
-                            </ul>
-                        </nav>
-                    </div>
+                    <?php require 'Menu_mobile.php'; ?>
                 </div>
 </div>

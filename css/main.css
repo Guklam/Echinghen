@@ -1,11 +1,16 @@
 @charset "UTF-8";
-/********************
+/**
+ * @author Guillaume Cazin
+ * @description Site web crée de A à Z dans le cadre d'une premiere année de BTS SIO
+ * @date 28/05/18 => 06/07/18
+ */
+/**
  * Langues
- *******************/
+ */
 @import url("https://fonts.googleapis.com/css?family=Lato");
-/********************
+/**
  * Général
- *******************/
+ */
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 * {
   box-sizing: border-box;
@@ -15,6 +20,80 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .header {
+  background: linear-gradient(rgba(97, 135, 245, 0.15), rgba(97, 135, 245, 0.3)), url("../images/background-test-2.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: left;
+}
+
+.container .header.page {
+  height: auto;
+}
+
+.container .header__title {
+  text-align: center;
+}
+
+.container .header__title .welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container .header__title h1 {
+  color: #ecf0f1;
+  font-size: 50px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.container .header__title img {
+  height: 80px;
+  max-width: 100%;
+}
+
+.container .header__title #weather {
+  color: #ecf0f1;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.container .header__title #weather ul {
+  padding: 0;
+  list-style: none;
+}
+
+.container .header__title .block-buttons {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+
+.container .header .discover {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container .header .discover a,
+.container .header .discover i {
+  color: #ecf0f1;
+}
+
+.container .header .discover a {
+  font-size: 17px;
+}
+
+.container .header .discover i {
+  padding-top: 10px;
+  display: block;
+  animation: bounce 1.8s infinite;
+  font-size: 30px;
 }
 
 #news,
@@ -227,9 +306,9 @@ body {
   cursor: pointer;
 }
 
-/********************
+/**
  * Menu
- *******************/
+ */
 .header__menu ul.main-menu {
   margin: 0;
   padding: 0;
@@ -296,9 +375,13 @@ body {
   padding-right: 8px;
 }
 
-/********************
+/**
  * Menu mobile
- *******************/
+ */
+.container-menu-mobile {
+  background: red;
+}
+
 .button_container {
   position: fixed;
   top: 10px;
@@ -441,80 +524,9 @@ body {
   transition: .35s;
 }
 
-/********************
- * Page principale
- *******************/
-.container .header {
-  background: linear-gradient(rgba(97, 135, 245, 0.15), rgba(97, 135, 245, 0.3)), url("../images/background-test-2.jpg");
-  height: 100vh;
-  background-size: cover;
-  background-position: left;
-}
-
-.container .header.page {
-  height: auto;
-}
-
-.container .header__title {
-  text-align: center;
-  margin-top: 10%;
-}
-
-.container .header__title h1 {
-  color: #ecf0f1;
-  font-size: 50px;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
-}
-
-.container .header__title img {
-  height: 80px;
-  max-width: 100%;
-}
-
-.container .header__title #weather {
-  color: #ecf0f1;
-  text-align: center;
-  margin-top: 10%;
-}
-
-.container .header__title #weather ul {
-  padding: 0;
-  list-style: none;
-}
-
-.container .header__title .block-buttons {
-  width: 20%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 150px;
-}
-
-.container .header .discover {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.container .header .discover a,
-.container .header .discover i {
-  color: #ecf0f1;
-}
-
-.container .header .discover a {
-  font-size: 17px;
-}
-
-.container .header .discover i {
-  padding-top: 10px;
-  display: block;
-  animation: bounce 1.8s infinite;
-  font-size: 30px;
-}
-
-/********************
+/**
  * Slider
- *******************/
+ */
 .carousel-cell {
   margin-right: 20px;
   overflow: hidden;
@@ -531,9 +543,9 @@ body {
   }
 }
 
-/********************
- * Grilles images
- *******************/
+/**
+ * Grid pour les images
+ */
 .message {
   border: 1px solid #d2d0d0;
   padding: 2em;
@@ -700,9 +712,9 @@ h1 {
   color: #828282;
 }
 
-/********************
- * Buttons
- *******************/
+/**
+ * Boutons
+ */
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -1033,9 +1045,9 @@ input[type="button"].btn-block {
   border-bottom-right-radius: 0;
 }
 
-/********************
- * Input
- *******************/
+/**
+ * Inputs
+ */
 .input-group {
   position: relative;
   display: -ms-flexbox;
@@ -1117,9 +1129,9 @@ input[type="button"].btn-block {
   font-size: 13px;
 }
 
-/********************
+/**
  * Alertes
- *******************/
+ */
 .alert {
   position: relative;
   padding: 0.75rem 1.25rem;
@@ -1260,9 +1272,12 @@ input[type="button"].btn-block {
   color: #040505;
 }
 
-/********************
- * Autres assets
- *******************/
+/**
+ * Composants divers
+ * @media-queries
+ * @properties
+ * @keyframes
+ */
 @media screen and (max-width: 1200px) {
   .button_container {
     visibility: visible;
@@ -1336,8 +1351,11 @@ input[type="button"].btn-block {
 
 @media screen and (max-height: 400px) {
   .overlay ul li a {
-    padding-bottom: 0;
+    padding-bottom: 5px;
     font-size: 15px;
+  }
+  .overlay ul li a:after {
+    height: 2px;
   }
 }
 

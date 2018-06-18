@@ -8,6 +8,71 @@ body {
     font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.container {
+    .header {
+        $background: "../images/background-test-2.jpg";
+        background: linear-gradient(rgba($opacity_blue, 0.15), rgba($opacity_blue, 0.30)), url($background);
+        height: 100vh;
+        background-size: cover;
+        background-position: left;
+        &.page {
+            height: auto;
+        }
+        &__title {
+            text-align: center;
+            .welcome {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            h1 {
+                color: $white;
+                font-size: 50px;
+                text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+            }
+            img {
+                height: 80px;
+                max-width: 100%;
+            }
+            #weather {
+                color: $white;
+                text-align: center;
+                margin-top: 10%;
+                ul {
+                    padding: 0;
+                    list-style: none;
+                }
+            }
+            .block-buttons {
+                width: 20%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 150px;
+            }
+        }
+        .discover {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            a,
+            i {
+                color: $white;
+            }
+            a {
+                font-size: 17px;
+            }
+            i {
+                padding-top: 10px;
+                display: block;
+                animation: bounce 1.8s infinite;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
 #news,
 #localisation,
 #presentation,

@@ -72,8 +72,11 @@
 
 @media screen and (max-height: 400px) {
     .overlay ul li a {
-        padding-bottom: 0;
+        padding-bottom: 5px;
         font-size: 15px;
+    }
+    .overlay ul li a:after {
+        height: 2px;
     }
 }
 
