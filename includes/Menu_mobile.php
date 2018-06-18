@@ -7,17 +7,14 @@
     <div class="overlay" id="overlay">
         <nav class="overlay-menu">
             <ul>
-                <li class="items active">
-                    <a href="news">Actualités</a>
-                </li>
                 <li class="items">
                     <a href="agenda">Agenda</a>
                 </li>
                 <li class="items">
-                    <a href="infos-pratiques">Infos pratiques</a>
+                    <a href="infos-pratiques">Informations pratiques</a>
                 </li>
                 <li class="items">
-                    <a href="locations">Location de salles</a>
+                    <a href="locations-de-salles">Location de salles</a>
                 </li>
                 <li class="items">
                     <a href="administratif">Administratif</a>

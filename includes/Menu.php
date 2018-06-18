@@ -2,30 +2,27 @@
     <div class="header__menu">
         <ul class="main-menu">
             <li class="items first title">
-                <a class="not" href="/">
+                <a class="not" href="./">
                 <img src="images/logo-echinghen.png" alt="Logo">Echinghen</a>
             </li>
             <span class="push-left"></span>
-                        <li class="items active">
-                            <a href="#news">Actualités</a>
+                        <li class="items">
+                            <a href="agenda">Agenda</a>
                         </li>
                         <li class="items">
-                            <a href="agenda"<?php if($_SERVER['PHP_SELF'] == 'agenda') {echo 'class="active"';} else { }?>>Agenda</a>
+                            <a href="infos-pratiques">Informations pratiques</a>
                         </li>
                         <li class="items">
-                            <a href="infos-pratiques"<?php if($_SERVER['PHP_SELF'] == 'infos-pratiques.php') {echo 'class="active"';} else { }?>>Infos pratiques</a>
+                            <a href="locations-de-salles">Location de salles</a>
                         </li>
                         <li class="items">
-                            <a href="locations"<?php if($_SERVER['PHP_SELF'] == 'agenda.php') {echo 'class="active"';} else { }?>>Location de salles</a>
+                            <a href="administratif">Administratif</a>
                         </li>
                         <li class="items">
-                            <a href="administratif"<?php if($_SERVER['PHP_SELF'] == 'administratif.php') {echo 'class="active"';} else { }?>>Administratif</a>
+                            <a href="vie-sociale">Vie sociale</a>
                         </li>
                         <li class="items">
-                            <a href="vie-sociale"<?php if($_SERVER['PHP_SELF'] == 'vie-sociale.php') {echo 'class="active"';} else { }?>>Vie sociale</a>
-                        </li>
-                        <li class="items">
-                            <a href="le-village"<?php if($_SERVER['PHP_SELF'] == 'le-village.php') {echo 'class="active"';} else { }?>>Le village</a>
+                            <a href="le-village">Le village</a>
                         </li>
                         <?php
                         if(isset($_SESSION['id'])) {
