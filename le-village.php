@@ -1,7 +1,7 @@
 <?php 
 session_start();
 require 'includes/helpers.php'; 
-getHead("Informations pratiques"); 
+getHead("Le village"); 
 ?>
 <div class="container">
     <?= getMenu(); ?>
@@ -9,16 +9,17 @@ getHead("Informations pratiques");
 <div class="fil-ariane">
         <?php include_once 'includes/ariane.php'; ?>
     </div>
-        <div class="main-image" style="background: url(images/infos-pratiques/informations.jpg); background-size: cover;">
-            <div class="text-main-image">Informations pratiques</div>
+        <div class="main-image" style="background: url(images/slider/mairie.jpg); background-size: cover;">
+            <div class="text-main-image">Le village</div>
         </div>
 
         <div class="container-template">
             <?php 
+            $folder = "images/le-village";
             $items = array(
-                array("ramassages-des-dechets", "images/infos-pratiques/trash.jpg", "Ramassage des déchets"),
-                array("horaire-des-bus", "images/infos-pratiques/bus.jpg", "Horaire des bus"),
-                array("animaux-errants", "images/infos-pratiques/animaux.jpg", "Animaux errants")
+                array("se-loger-a-echinghen", "$folder/se-loger.jpg", "Se loger à Echinghen"),
+                array("patrimoine-historique", "$folder/patrimoine.jpg", "Patrimoine historique"),
+                array("sentier-de-randonnee", "$folder/sentier.jpg", "Sentier de randonnée")
             );
             foreach ($items as $item) {
                 echo '<article class="bloc">

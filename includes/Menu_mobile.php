@@ -14,7 +14,7 @@
                     <a href="infos-pratiques">Informations pratiques</a>
                 </li>
                 <li class="items">
-                    <a href="locations-de-salles">Location de salles</a>
+                    <a href="location-de-salles">Location de salles</a>
                 </li>
                 <li class="items">
                     <a href="administratif">Administratif</a>

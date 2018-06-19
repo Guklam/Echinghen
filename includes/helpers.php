@@ -70,8 +70,32 @@ function getHead($titre)
     require_once('Head.php');
 }
 
+/**
+ * Accesseur pour le head HTML pour les pages 
+ */
+function getHeadPage($titre)
+{
+    class Head {
+    
+        protected $titre;
+    
+        /*
+        * Constructeur du head
+        */ 
+        function __construct($unTitre) {
+            $this->titre = $unTitre;
+        }
+    }
+    $title = new Head($titre);
+    require_once('Head-page.php');
+}
+
 function getMenu() {
     require_once ('Menu.php');
+}
+
+function getMenuPage() {
+    require_once ('Menu-page.php');
 }
 
 function getMenuMobile() {

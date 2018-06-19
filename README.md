@@ -1,4 +1,4 @@
-# Site de la mairie d'Echinghen
+﻿# Site de la mairie d'Echinghen
 
 ## Liste des pages à créer
 

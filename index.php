@@ -5,46 +5,47 @@ getHead("Accueil");
 ?>
     <div class="container">
 
-        <!-- Page principale -->
-        <div class="header">
-            <div class="header__menu">
-                <ul class="main-menu">
-                    <li class="items first title">
-                        <a class="not" href="/">
-                            <img src="images/logo-echinghen.png" alt="Logo">Echinghen</a>
-                    </li>
-                    <span class="push-left"></span>
-                    <li class="items active">
-                        <a href="#news">Actualités</a>
-                    </li>
-                    <li class="items">
-                        <a href="agenda">Agenda</a>
-                    </li>
-                    <li class="items">
-                        <a href="infos-pratiques">Infos pratiques</a>
-                    </li>
-                    <li class="items">
-                        <a href="locations">Location de salles</a>
-                    </li>
-                    <li class="items">
-                        <a href="administratif">Administratif</a>
-                    </li>
-                    <li class="items">
-                        <a href="vie-sociale">Vie sociale</a>
-                    </li>
-                    <li class="items">
-                        <a href="le-village">Le village</a>
-                    </li>
-                    <?php
+        <div class="header__menu">
+            <ul class="main-menu">
+                <li class="items first title">
+                    <a class="not" href="/">
+                        <img src="images/logo-echinghen.png" alt="Logo">Echinghen</a>
+                </li>
+                <span class="push-left"></span>
+                <li class="items active">
+                    <a href="#news">Actualités</a>
+                </li>
+                <li class="items">
+                    <a href="agenda">Agenda</a>
+                </li>
+                <li class="items">
+                    <a href="infos-pratiques">Infos pratiques</a>
+                </li>
+                <li class="items">
+                    <a href="location-de-salles">Location de salles</a>
+                </li>
+                <li class="items">
+                    <a href="administratif">Administratif</a>
+                </li>
+                <li class="items">
+                    <a href="vie-sociale">Vie sociale</a>
+                </li>
+                <li class="items">
+                    <a href="le-village">Le village</a>
+                </li>
+                <?php
                         if(isset($_SESSION['id'])) {
                             echo '<li class="items">
                             <a href="admin/dashboard.php">Administration</a>
                             </li>';
                         }
                         ?>
-                </ul>
-                <?= getMenuMobile(); ?>
-            </div>
+            </ul>
+            <?= getMenuMobile(); ?>
+        </div>
+
+        <!-- Page principale -->
+        <div class="header">
             <div class="header__title">
                 <div class="welcome">
                     <h1>Bienvenue à Echinghen</h1>

@@ -1,14 +1,35 @@
+/**
+ * 
+ * Commun à tous les éléments
+ * 
+ */
 * {
     box-sizing: border-box;
 }
 
+/**
+ * 
+ * Body
+ * 
+ */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/**
+ * 
+ * Header présent sur toutes les pages
+ * 
+ */
 .container {
+    .header__menu {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
     .header {
         $background: "../images/background-test-2.jpg";
         background: linear-gradient(rgba($opacity_blue, 0.15), rgba($opacity_blue, 0.30)), url($background);
@@ -17,6 +38,11 @@ body {
         background-position: left;
         &.page {
             height: auto;
+            .header__menu {
+                background: url($background);
+                background-size: cover;
+                background-position: center;
+            }
         }
         &__title {
             text-align: center;
@@ -73,6 +99,11 @@ body {
     }
 }
 
+/**
+ * 
+ * Bloc présent sur la page principale
+ * 
+ */
 #news,
 #localisation,
 #presentation,
@@ -81,6 +112,11 @@ body {
     margin-bottom: 60px;
 }
 
+/**
+ * 
+ * Bloc "Localisation" sur la page principale
+ * 
+ */
 #localisation {
     position: relative;
     iframe {
@@ -92,74 +128,11 @@ body {
     }
 }
 
-#footer {
-    position: relative;
-    background: $midnight;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 30px;
-    grid-gap: 20px;
-    box-shadow: 0px -1px 7px -1px rgba(97, 135, 245, 0.7);
-    border-top: 6px solid $blue;
-    p {
-        margin: 0;
-        line-height: 2;
-        color: $white;
-    }
-    >[class*="footer"]:not(:nth-child(1n +2)) {
-        display: inline-grid;
-        justify-content: center;
-        align-content: center;
-    }
-    .footer-image img {
-        height: 50px;
-    }
-    .footer-menu ul {
-        color: $white;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: inline-block;
-        li {
-            line-height: 1.8;
-            a {
-                font-size: 14px;
-                transition: 0.2s;
-                i {
-                    margin-right: 5px;
-                }
-                &:hover {
-                    color: darken($white, 30%);
-                }
-            }
-        }
-    }
-    .footer-contact {
-        button {
-            margin-top: 5px;
-        }
-        p a {
-            color: $dark_white;
-        }
-        i {
-            margin-right: 6px;
-        }
-    }
-    .footer-newsletter {
-        grid-column: 2;
-    }
-    .createur {
-        position: absolute;
-        right: 5px;
-        bottom: 5px;
-        color: $dark_white;
-        font-size: 12px;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-    }
-}
-
+/**
+ * 
+ * Bloc "Se restaurer" sur la page principale
+ * 
+ */
 #restaurant {
     .grid-restaurant {
         display: grid;
@@ -222,31 +195,152 @@ body {
     }
 }
 
-.container-404 {
-    height: 100vh;
-    background: linear-gradient(lighten(rgba(255, 130, 45, 0.85), 5%), lighten(rgba(255, 130, 45, 0.85), 10%));
-    .error-404 {
-        @import url('https://fonts.googleapis.com/css?family=Montserrat');
-        @include center();
-        text-align: center;
-        font-family: 'Montserrat';
-        color: $white;
-        .main-error {
-            font-size: 9rem;
+/**
+ * 
+ * Bloc principal présent sur les pages du menu
+ * 
+ */
+.page-template {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 110px;
+    .main-image {
+        height: 300px;
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.15);
+        .text-main-image {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            background: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+            transform: translateX(-50%);
+            width: 80%;
+            box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.15);
         }
-        .text-error {
-            font-size: 1.2rem;
-            a {
-                color: $midnight;
+    }
+}
+
+/**
+ * 
+ * Partie des pages principales
+ * 
+ */
+.container-template {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 50px;
+    flex-basis: 33%;
+    flex-wrap: wrap;
+    article.bloc {
+        width: 300px;
+        box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.15);
+        margin: 10px;
+        height: 250px;
+        transition: 0.3s;
+        overflow: hidden;
+        position: relative;
+        .image-bloc {
+            height: 85%; 
+            width: 100%;
+            transition: 0.3s;
+        }
+        .description-bloc {
+            padding: 10px;
+            color: black;
+            background: white;
+            border-bottom: 2px solid $blue;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        &:hover {
+            box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            .image-bloc {
+                transform: scale(1.02);
             }
         }
     }
-    .arrow-back {
-        padding: 10px;
-        color: white;
-        font-size: 2.2rem;
-        i {
-            cursor: pointer;
+}
+
+/**
+ * 
+ * Footer
+ * 
+ */
+#footer {
+    position: relative;
+    background: $midnight;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    grid-gap: 20px;
+    box-shadow: 0px -1px 7px -1px rgba(97, 135, 245, 0.7);
+    border-top: 6px solid $blue;
+    p {
+        margin: 0;
+        line-height: 2;
+        color: $white;
+    }
+    >[class*="footer"]:not(:nth-child(1n +2)) {
+        display: inline-grid;
+        justify-content: center;
+        align-content: center;
+    }
+    .footer-image img {
+        height: 50px;
+    }
+    .footer-menu ul {
+        color: $white;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        li {
+            line-height: 1.8;
+            a {
+                font-size: 14px;
+                transition: 0.2s;
+                i {
+                    margin-right: 5px;
+                }
+                &:hover {
+                    color: darken($white, 30%);
+                }
+            }
         }
+    }
+    .footer-contact {
+        button {
+            margin-top: 5px;
+        }
+        p a {
+            color: $dark_white;
+        }
+        i {
+            margin-right: 6px;
+        }
+    }
+    .footer-contact-mobile {
+        display: none;
+    }
+    .footer-newsletter {
+        grid-column: 2;
+    }
+    .createur {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        color: $dark_white;
+        font-size: 12px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
     }
 }

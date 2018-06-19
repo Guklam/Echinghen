@@ -1,5 +1,4 @@
-<div class="header page">
-    <div class="header__menu">
+<div class="header__menu">
         <ul class="main-menu">
             <li class="items first title">
                 <a class="not" href="./">
@@ -34,4 +33,3 @@
                     </ul>
                     <?php require 'Menu_mobile.php'; ?>
                 </div>
-</div>

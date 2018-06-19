@@ -3,17 +3,21 @@
     .button_container {
         visibility: visible;
     }
-    .container .header.page {
-        height: 49px;
+    .page .header__menu {
+        position: fixed !important;
+        height: 50px;
+        width: 100%;
+        z-index: 99;
     }
     .header__menu ul.main-menu {
-        display: block;
+        height: 50px;
     }
     .header__menu ul.main-menu li {
         visibility: hidden;
     }
     .header__menu ul.main-menu li.title {
-        justify-content: initial;
+        position: absolute;
+        left: 0;
         visibility: visible !important;
     }
     .header__menu ul.main-menu li.title img {
@@ -82,9 +86,29 @@
 
 @media screen and (max-width: 768px) {
     #footer {
+        text-align: center;
         display: block !important;
-        >div {
+        p {
+            font-size: 14px;
+        }
+        > div {
             margin-bottom: 20px;
+        }
+        .footer-image img {
+            margin: 0 auto;
+        }
+        .footer-contact {
+            display: none;
+        }
+        .footer-contact-mobile {
+            margin: 30px;
+            display: block;
+            a.link-mobile {
+                padding: 10px;
+                background: $opacity_blue;
+                border-radius: 100%;
+                color: white;
+            }
         }
     }
 }

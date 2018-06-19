@@ -16,7 +16,13 @@
         <p><i class="fas fa-phone"></i><span class="bold">03.21.91.17.67</span></p>
         <p><i class="fas fa-fax"></i><span class="bold">03.21.33.86.57</span></p>
         <p><i class="fas fa-envelope"></i><a href="mailto:mairie.echinghen@orange.fr">mairie.echinghen@orange.fr</a></p>
-        <p><i class="fas fa-address-book"></i><a href="#">Nous contacter</a></p>
+        <p><i class="fas fa-address-book"></i><a href="contact">Nous contacter</a></p>
+    </div>
+    <div class="footer-contact-mobile">
+        <a href="tel:+3321911767" class="link-mobile"><i class="fas fa-phone"></i></a>
+        <a href="tel:+3321338657" class="link-mobile"><i class="fas fa-fax"></i></a>
+        <a href="mailto:mairie.echinghen@orange.fr" class="link-mobile"><i class="fas fa-envelope"></i></a>
+        <a href="contact" class="link-mobile"><i class="fas fa-address-book"></i></a>
     </div>
     <div class="footer-newsletter">
         <p>Inscrivez-vous à la newsletter pour ne plus rien louper de l'actualité!</p>
