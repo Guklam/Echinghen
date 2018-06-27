@@ -12,14 +12,11 @@ getHead("Accueil");
                         <img src="images/logo-echinghen.png" alt="Logo">Echinghen</a>
                 </li>
                 <span class="push-left"></span>
-                <li class="items active">
-                    <a href="#news">Actualités</a>
-                </li>
                 <li class="items">
                     <a href="agenda">Agenda</a>
                 </li>
                 <li class="items">
-                    <a href="infos-pratiques">Infos pratiques</a>
+                    <a href="infos-pratiques">Informations pratiques</a>
                 </li>
                 <li class="items">
                     <a href="location-de-salles">Location de salles</a>

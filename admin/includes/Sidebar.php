@@ -4,7 +4,7 @@
 		Administration
 	</h2>
 	<div class="picture">
-		<img src="../images/001.jpg" alt="image user">
+		<img src="../images/agenda/001.jpg" alt="image user">
 		<span class="text-img">
 			<?php if(date("h") < 18) { echo "Bonjour"; } else { echo "Bonsoir"; }?>,
 			<br>

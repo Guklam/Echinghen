@@ -6,9 +6,6 @@ getHead("Locations de salles");
 <div class="container">
     <?= getMenu(); ?>
 <div class="page-template">
-<div class="fil-ariane">
-        <?php include_once 'includes/ariane.php'; ?>
-    </div>
         <div class="main-image" style="background: url(images/location-de-salles/locations-grande.jpg); background-size: cover;">
             <div class="text-main-image">Locations de salles</div>
         </div>

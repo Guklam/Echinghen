@@ -6,9 +6,6 @@ getHead("Informations pratiques");
 <div class="container">
     <?= getMenu(); ?>
 <div class="page-template">
-<div class="fil-ariane">
-        <?php include_once 'includes/ariane.php'; ?>
-    </div>
         <div class="main-image" style="background: url(images/infos-pratiques/informations.jpg); background-size: cover;">
             <div class="text-main-image">Informations pratiques</div>
         </div>

@@ -6,9 +6,6 @@ getHead("Administratif");
 <div class="container">
     <?= getMenu(); ?>
 <div class="page-template">
-<div class="fil-ariane">
-        <?php include_once 'includes/ariane.php'; ?>
-    </div>
         <div class="main-image" style="background: url(images/administratif/administratif.jpg); background-size: cover;">
             <div class="text-main-image">Administratif</div>
         </div>

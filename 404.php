@@ -12,7 +12,7 @@
 
         .container-404 {
             height: 100vh;
-            background: linear-gradient(rgba(255, 145, 71, 0.85), rgba(255, 160, 96, 0.85));
+            background: linear-gradient(rgba(71, 130, 255, 0.85), rgba(6, 57, 80, 0.67));
         }
 
         .container-404 .error-404 {

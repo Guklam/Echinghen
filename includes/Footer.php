@@ -13,8 +13,8 @@
         </ul>
     </div>
     <div class="footer-contact">
-        <p><i class="fas fa-phone"></i><span class="bold">03.21.91.17.67</span></p>
-        <p><i class="fas fa-fax"></i><span class="bold">03.21.33.86.57</span></p>
+        <p><i class="fas fa-phone"></i><span class="bold">03 21 91 17 67</span></p>
+        <p><i class="fas fa-fax"></i><span class="bold">03 21 33 86 57</span></p>
         <p><i class="fas fa-envelope"></i><a href="mailto:mairie.echinghen@orange.fr">mairie.echinghen@orange.fr</a></p>
         <p><i class="fas fa-address-book"></i><a href="contact">Nous contacter</a></p>
     </div>
