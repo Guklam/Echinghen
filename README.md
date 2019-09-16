@@ -73,7 +73,7 @@ La partie pour se connecter à l'administration se trouve dans `admin/connexion.
 * Ressources
   * FontAwesome pour les icônes
   * Flickity pour le slider
-  * Interface d'admistration basé sur un design de Dribbble (Ré-adapté en site web pour le site web)
+  * Interface d'admistration basé sur un design de Dribbble (Ré-adapté en version code pour le site web)
   * Grid CSS pour les articles, catégories etc basé sur un CodePen
   * Boutons et input bootstrap
   * Grid CSS pour l'interface d'admistration basée sur Skeleton
